@@ -1,6 +1,9 @@
 /* You'll need to have MySQL running and your Node server running
  * for these tests to pass. */
 
+// from learn:
+// spec/server-spec.js contains a mocha spec for testing your Node server's ability to read and write the database. This spec is not complete! It contains several lines commented with "TODO". You'll be customizing those lines to match the details of the database tables you create
+
 const mysql = require('mysql2');
 const axios = require('axios');
 

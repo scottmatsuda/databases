@@ -3,6 +3,9 @@
  * before running this example. Documentation is at http://sequelizejs.com/
  */
 
+// from learn:
+// orm-example.js contains EXAMPLE CODE for you to reference later in the sprint when you start refactoring your Node server to use the Sequelize ORM to read and write data to the MySQL. You'll be learning how ORMs allow you to read and write to the database in more JavaScript-like syntax instead of in raw SQL strings
+
 var Sequelize = require('sequelize');
 var db = new Sequelize('chatter', 'root', '');
 /* TODO this constructor takes the database name, username, then password.
