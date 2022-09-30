@@ -1,14 +1,6 @@
--- CREATE DATABASE chat;
+CREATE DATABASE chat;
 
 USE chat;
-
-CREATE TABLE messages (
-  id INTEGER(11) NOT NULL AUTO_INCREMENT,
-  user_id INTEGER(11) NULL DEFAULT NULL,
-  text VARCHAR(100),
-  PRIMARY KEY(id)
-  -- FOREIGN KEY(user_id)
-);
 
 CREATE TABLE users (
   id INTEGER(11) NOT NULL AUTO_INCREMENT,
@@ -16,6 +8,13 @@ CREATE TABLE users (
   PRIMARY KEY(id)
 );
 
+CREATE TABLE messages (
+  id INTEGER(11) NOT NULL AUTO_INCREMENT,
+  user_id INTEGER(11) NULL DEFAULT NULL,
+  text VARCHAR(100),
+  PRIMARY KEY(id),
+  FOREIGN KEY(user_id) REFERENCES users (id)
+);
 
 
 /*  Execute this file from the command line by typing:
